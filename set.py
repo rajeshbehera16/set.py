@@ -1,0 +1,33 @@
+fruits = {"apple", "banana", "cherry", "date"}
+print("Original set:", fruits)
+fruits.add("elderberry")
+print("After adding 'elderberry':", fruits)
+fruits.update(["fig", "grape"])
+print("After adding multiple elements:", fruits)
+fruits.remove("banana")  
+print("After removing 'banana':", fruits)
+fruits.discard("kiwi")
+print("After discarding 'kiwi' (no error):", fruits)
+popped_fruit = fruits.pop()
+print("Popped fruit:", popped_fruit)
+print("After popping:", fruits)
+if "apple" in fruits:
+    print("'apple' is in the set")
+set1 = {"apple", "banana", "cherry"}
+set2 = {"cherry", "date", "elderberry"}
+print("Set 1:", set1)
+print("Set 2:", set2)
+union_set = set1.union(set2)
+print("Union of Set 1 and Set 2:", union_set)
+intersection_set = set1.intersection(set2)
+print("Intersection of Set 1 and Set 2:", intersection_set)
+difference_set = set1.difference(set2)
+print("Difference (Set 1 - Set 2):", difference_set)
+symmetric_difference_set = set1.symmetric_difference(set2)
+print("Symmetric Difference of Set 1 and Set 2:", symmetric_difference_set)
+print("Iterating over the set:")
+for fruit in fruits:
+    print(fruit)
+print("Length of the set:", len(fruits))
+fruits.clear()
+print("After clearing the set:", fruits)
